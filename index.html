@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anti-Ragging Reporting System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      line-height: 1.6;
+    }
+
+    .main-header {
+      text-align: center;
+      background: linear-gradient(90deg, #1f4e79, #2d5aa0);
+      color: white;
+      padding: 2rem 1rem;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 2rem;
+    }
+
+    .main-header img {
+      width: 120px;
+      max-width: 40vw;
+    }
+
+    h1, h2, h3 {
+      margin: 0.5rem 0;
+    }
+
+    /* Committee Section */
+    .committee-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+
+    .committee-card {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 12px;
+      border-left: 5px solid #007bff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex: 1 1 calc(50% - 1rem);
+      transition: transform 0.2s ease;
+    }
+
+    .committee-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .committee-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 1rem;
+      object-fit: cover;
+    }
+
+    .committee-card .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .committee-card h4 {
+      margin: 0;
+      color: #1f4e79;
+    }
+
+    .committee-card p {
+      margin: 0;
+      color: #666;
+      font-weight: bold;
+    }
+
+    .committee-card .contact-info {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Complaint Section */
+    .complaint-section {
+      background: #fff3cd;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #ffc107;
+      margin: 2rem 0;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #1f4e79;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover:enabled {
+      background: #2d5aa0;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      background-color: #ccc;
+    }
+
+    #status_message {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .success { color: green; }
+    .error { color: red; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 1.5rem;
+      font-size: 0.9em;
+      background: #f1f3f6;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .committee-card {
+        flex: 1 1 100%;
+      }
+
+      .committee-card img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+      h3 { font-size: 1.1rem; }
+      .main-header { padding: 1.5rem 0.5rem; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-header">
+    <img src="./logo.jpg" alt="College Logo">
+    <h1>Al-Ameen Engineering College</h1>
+    <h2>🛡️ Anti-Ragging Reporting Committee</h2>
+    <p>A Safe Platform for Reporting Incidents</p>
+    <p>KNOWLEDGE GROWS WHERE RAGGING ENDS</p>
+    <p>STRONG SENIORS GUIDES, NOT RAG</p>
+  </div>
+
+  <section>
+    <h2>👥 Anti-Ragging Committee Members</h2>
+    <p>Our dedicated committee is here to ensure a safe and secure environment for all students.</p>
+    <p>A promise that no voice will go unheard, no issue will be left alone with their struggles.</p>
+
+    <div class="committee-container">
+
+      <!-- Principal -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="./principal.jpeg" alt="Dr.A.M.J.Md Zubair Rahman.">
+          <div>
+            <h4>Dr.A.M.J.Md Zubair Rahman.</h4>
+            <p>Principal & Committee Chairman</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9000000000</p>
+          <p><strong>📧 Email:</strong> xxxxxxxx.ac.in</p>
+        </div>
+      </div>
+
+      <!-- Vice Principal -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="https://via.placeholder.com/150x150/2196F3/white?text=Vice+Principal" alt="Vice Principal">
+          <div>
+            <h4>Dr M. Mohamed Musthafa</h4>
+            <p>Vice Principal</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9715309000</p>
+          <p><strong>📧 Email:</strong> profmusthafa@alameen.ac.in</p>
+        </div>
+      </div>
+
+      <!-- Dean -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="https://via.placeholder.com/150x150/FF9800/white?text=Dean" alt="Dr.N. Ramesh Kumar">
+          <div>
+            <h4>Dr.N. Ramesh Kumar</h4>
+            <p>Dean of A/A</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9842022458</p>
+          <p><strong>📧 Email:</strong> nrameshkumar@alameeen.ac.in</p>
+        </div>
+      </div>
+
+      <!-- HOD S&H -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="https://via.placeholder.com/150x150/9C27B0/white?text=Counselor" alt="Dr.K.Sundareswari">
+          <div>
+            <h4>Dr.K.Sundareswari</h4>
+            <p>HOD/S&H</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9489364132</p>
+          <p><strong>📧 Email:</strong> ksundareswari@alameen.ac.in</p>
+        </div>
+      </div>
+
+      <!-- HOD IT & AIDS -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="https://via.placeholder.com/150x150/9C27B0/white?text=Counselor" alt="Dr.O.Cyril Mathew">
+          <div>
+            <h4>Dr.O.Cyril Mathew</h4>
+            <p>HOD of INFORMATION TECHNOLOGY & AIDS</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9944403439</p>
+          <p><strong>📧 Email:</strong> ocyrilmathew@alameen.ac.in</p>
+        </div>
+      </div>
+
+      <!-- HOD ASP/MECH -->
+      <div class="committee-card">
+        <div class="info">
+          <img src="https://via.placeholder.com/150x150/9C27B0/white?text=Counselor" alt="prof.M.Santhose">
+          <div>
+            <h4>prof.M.Santhose</h4>
+            <p>HOD of ASP/MECH</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>📞 Phone:</strong> +91-9842582823</p>
+          <p><strong>📧 Email:</strong> msanthose@alameen.ac.in</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="complaint-section">
+    <h3>📝 Submit Your Complaint</h3>
+    <p>
+      If you are facing any form of ragging or abuse, please report it immediately.
+      Your register number will be used for identification, and appropriate action will be taken.
+      <br><strong>Note:</strong> Both register number and complaint details are mandatory fields.
+    </p>
+  </div>
+
+  <h3>Student Information & Complaint Details</h3>
+  <form id="complaint_form">
+    <label for="register_number">Student Register Number *</label>
+    <input type="text" id="register_number" name="register_number" placeholder="Enter your register number (e.g., 730222243020)" required>
+
+    <label for="complaint_details">Complaint Details *</label>
+    <textarea id="complaint_details" name="complaint_text" rows="6" placeholder="Describe what happened..." required></textarea>
+
+    <button type="submit" id="submit_button">🚨 Raise Complaint</button>
+  </form>
+
+  <div id="status_message"></div>
+
+  <footer>
+    <p><strong>Emergency Helpline:</strong> +91-9842022458 | <strong>Email:</strong> alameenengg@yahoo.co.in</p>
+    <p>Available 24/7 for urgent complaints</p>
+    <small>This system ensures confidentiality and prompt action against ragging incidents.</small>
+  </footer>
+
+  <script>
+    const form = document.getElementById('complaint_form');
+    const submitButton = document.getElementById('submit_button');
+    const statusMessage = document.getElementById('status_message');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      submitButton.disabled = true;
+      submitButton.textContent = 'Submitting...';
+      statusMessage.textContent = '';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('https://anti-ragging-committee-complaint-system.onrender.com/submit_complaint', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          submitButton.textContent = 'Request Submitted';
+          statusMessage.textContent = `✅ ${data.message}`;
+          statusMessage.classList.add('success');
+          statusMessage.classList.remove('error');
+          form.reset();
+        } else {
+          const errorData = await response.json();
+          submitButton.textContent = '🚨 Raise Complaint';
+          submitButton.disabled = false;
+          statusMessage.textContent = `❌ Error: ${errorData.detail}`;
+          statusMessage.classList.add('error');
+          statusMessage.classList.remove('success');
+        }
+      } catch (error) {
+        submitButton.textContent = '🚨 Raise Complaint';
+        submitButton.disabled = false;
+        statusMessage.textContent = '❌ Network error. Please try again.';
+        statusMessage.classList.add('error');
+        statusMessage.classList.remove('success');
+      }
+    });
+  </script>
+</body>
+</html>
